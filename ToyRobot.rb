@@ -104,5 +104,11 @@ class ToyRobot
 
 end
 
+puts "Welcome to Toy Robot Simulation program"
+puts "======================================="
+puts "To place robot: place,X,Y,F"
+puts "To move : move"
+puts "To rotate: left or right"
+puts "----------------------------------------"
 tr = ToyRobot.new
 puts tr.get_commands
