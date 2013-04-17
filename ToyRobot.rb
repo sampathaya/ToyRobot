@@ -23,16 +23,16 @@ class ToyRobot
   def place(input)
     args = input.split(",")
     if args.length != 4
-      puts "invalid input. try again!"
+      puts "invalid input.It should be <place>,<X>,<Y>,<F>. try again!"
       get_commands
     elsif !@@XY.include?(args[1]) then
-      puts "X coordinate is out of space"
+      puts "X coordinate is out of space. Try again!"
       get_commands
     elsif !@@XY.include?(args[2]) then
-      puts "Y Coordinate is out of space"
+      puts "Y Coordinate is out of space. Try again!"
       get_commands
     elsif !@@F.include?(args[3].upcase) then
-      puts 'Invalid rotate command'
+      puts 'Invalid rotate command. Try again!'
       get_commands
     end
     @x = args[1].to_i
