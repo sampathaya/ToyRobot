@@ -8,13 +8,13 @@ class ToyRobot
   def check_boundry
     case @face
       when "NORTH"
-        @y == 0 ? (false) : (@y = @y-1)
-      when "SOUTH"
         @y == 5 ? (false) : (@y = @y+1)
+      when "SOUTH"
+        @y == 0 ? (false) : (@y = @y-1)
       when "WEST"
-        @x == 0 ? (false) : (@x = @x-1)
-      when "EAST"
         @x == 5 ? (false) : (@x = @x+1)
+      when "EAST"
+        @x == 0 ? (false) : (@x = @x-1)
       else
         return false 
     end 
